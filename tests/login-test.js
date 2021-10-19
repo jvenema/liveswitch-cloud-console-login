@@ -1,4 +1,4 @@
-const login = require('../modules/liveswitch-cloud-console-login/login');
+const login = require('../index.js');
 
 (async function() {
     const loginResult = await login()
