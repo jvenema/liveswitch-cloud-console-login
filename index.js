@@ -33,7 +33,7 @@ const login = async function(clientId) {
 
     let server = app.listen(0, () => {
       const open = require('open');
-      open('https://auth.frozenmountain.com/authorize?client_id=' + clientId + '&response_type=code&redirect_uri=https%3A%2F%2Fapi.liveswitch.io%2Fauth0%2Fcallback&scope=openid%20email%20profile%20user_metadata%20app_metadata&state=%7B%20%22redirectUri%22%20%3A%20%22http%3A%2F%2F' + 'localhost:' + server.address().port + '%2F%23%2F%22%20%7D&path=%2F&auth0Client=' + '' + '%3D')
+      open('https://auth.frozenmountain.com/authorize?client_id=' + clientId + '&response_type=code&redirect_uri=https%3A%2F%2Fapi.liveswitch.io%2Fauth0%2Fcallback&scope=openid%20email%20profile%20user_metadata%20app_metadata&state=%7B%20%22redirectUri%22%20%3A%20%22http%3A%2F%2F' + 'localhost:' + server.address().port + '%2F%23%2F%22%20%7D&path=%2F&auth0Client=')
       process.stdout.write('Waiting for authentication to complete, please log in to the LiveSwitch console using the browser window that just opened...')
     })
   })
